@@ -14,6 +14,10 @@ public class Product {
         this.releaseDate = releaseDate;
     }
 
+    public Product(String name) {
+        this.name = name;
+    }
+
     public void setPrice(double price) {
         this.price = price;
     }

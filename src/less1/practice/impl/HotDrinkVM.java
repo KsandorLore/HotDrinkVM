@@ -1,9 +1,8 @@
 package less1.practice.impl;
 
+import java.util.List;
 import less1.practice.Product;
 import less1.practice.VendingMachine;
-
-import java.util.List;
 
 public class HotDrinkVM extends VendingMachine {
 
@@ -11,8 +10,12 @@ public class HotDrinkVM extends VendingMachine {
         super();
     }
 
+    public HotDrinkVM(List<Product> products) {
+        super(products);
+    }
+
     @Override
     public void addProducts(List<Product> products) {
-        System.out.println("Всегда ничего не верну");
+        this.products.addAll(products);
     }
 }
